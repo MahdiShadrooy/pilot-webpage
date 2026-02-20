@@ -1,4 +1,15 @@
 title: Statistical Machine Learning
 description: Statistical foundations of machine learning for senior undergraduate and graduate students.
-theme: minima
 markdown: kramdown
+highlighter: rouge
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
