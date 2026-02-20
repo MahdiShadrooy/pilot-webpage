@@ -35,7 +35,7 @@ We emphasize principles over software and derivations over recipes.
 
 ## Intended Audience
 
-Senior undergraduate students (6th semester and above) and graduate students.
+Undergraduate students (6th semester and above) and graduate students.
 
 **Prerequisites**
 - Probability theory  
