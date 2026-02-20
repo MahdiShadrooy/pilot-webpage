@@ -20,11 +20,16 @@ Statistical Machine Learning develops learning as a problem of statistical infer
 We emphasize principles over software and derivations over recipes.
 
 ---
+**References**
 
-## Primary References
+- James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: with Applications in Python*. Springer.
 
-- The Elements of Statistical Learning  
-- An Introduction to Statistical Learning  
+- Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.
+
+**Extra Resources**
+
+- [CS 189/289A: Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/) – University of California, Berkeley.
+- 
 
 ---
 
