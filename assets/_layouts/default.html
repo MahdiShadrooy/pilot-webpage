@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
-
 <body>
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/syllabus">Syllabus</a> |
+    <a href="/lectures">Lectures</a> |
+    <a href="/assignments">Assignments</a> |
+    <a href="/resources">Resources</a>
+  </nav>
 
-<header class="navbar">
-  <div class="container">
-    <div class="logo">{{ site.title }}</div>
-    <nav>
-      <a href="/">Home</a>
-      <a href="{{ '/syllabus' | relative_url }}">Syllabus</a>
-      <a href="/lectures">Lectures</a>
-      <a href="/assignments">Assignments</a>
-      <a href="/resources">Resources</a>
-    </nav>
-  </div>
-</header>
+  <hr>
 
-<main class="container content">
   {{ content }}
-</main>
-
-<footer class="footer">
-  <div class="container">
-    © 2026 Statistical Machine Learning
-  </div>
-</footer>
 
 </body>
 </html>
