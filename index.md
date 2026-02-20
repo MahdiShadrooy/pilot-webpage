@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 
-# Statistical Machine Learning  
 **Spring 2026**  
 Sharif University of Technology  
 
