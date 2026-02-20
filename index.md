@@ -29,7 +29,7 @@ We emphasize principles over software and derivations over recipes.
 **Extra Resources**
 
 - [CS 189/289A: Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/) – University of California, Berkeley.
-- 
+  
 
 ---
 
@@ -47,9 +47,9 @@ Undergraduate students (6th semester and above) and graduate students.
 ## Learning Objectives
 
 By the end of this course, students will be able to:
-
-- Formulate supervised learning as risk minimization  
-- Analyze modeling assumptions explicitly  
-- Reason about bias–variance and generalization  
-- Apply regularization and complexity control principles  
-- Critically evaluate machine learning methods  
+- View a learning problem from a statistical perspective.
+- Analyze modeling assumptions explicitly.
+- Reason about bias–variance tradeoffs and generalization.
+- Apply regularization and complexity control principles.
+- Critically evaluate machine learning methods.
+ 
