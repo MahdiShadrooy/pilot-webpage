@@ -24,6 +24,10 @@ h1, h2 {
   overflow-x: auto;
 }
 
+.modern-table tbody tr:nth-child(odd):not([style]) {
+  background-color: #f0f0f0;
+}
+
 .modern-table {
   width: 100%;
   border-collapse: collapse;
