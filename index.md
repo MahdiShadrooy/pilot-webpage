@@ -26,6 +26,29 @@ We emphasize principles over software and derivations over recipes.
 
 - Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.
 
+<div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap;">
+
+<div style="flex:1;">
+- James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: with Applications in Python*. Springer.
+</div>
+<div style="flex:0 0 150px;">
+<img src="/mnt/data/3c88e5a1-fe5a-465b-ace4-90560724ed89.png" alt="ISL Python Book" style="width:100%;"/>
+</div>
+
+</div>
+
+<div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap; margin-top:10px;">
+
+<div style="flex:1;">
+- Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.
+</div>
+<div style="flex:0 0 150px;">
+<img src="/images/esl.jpg" alt="ESL Book" style="width:100%;"/>
+</div>
+
+</div>
+
+  
 **Extra Resources**
 
 - [CS 189/289A: Introduction to Machine Learning](https://people.eecs.berkeley.edu/~jrs/189/) – University of California, Berkeley.
