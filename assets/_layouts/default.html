@@ -1,22 +1,346 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/custom.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #764ba2;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        section:nth-child(even) {
+            background: white;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        /* Course Overview */
+        .overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        /* Topics Grid */
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .topic-item {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .topic-item:hover {
+            transform: scale(1.05);
+        }
+
+        .topic-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        /* Resources */
+        .resources-list {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .resource-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #667eea;
+        }
+
+        .resource-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+
+        .resource-item a:hover {
+            text-decoration: underline;
+        }
+
+        .resource-item p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            nav ul li {
+                margin: 5px 15px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/syllabus">Syllabus</a> |
-    <a href="/lectures">Lectures</a> |
-    <a href="/assignments">Assignments</a> |
-    <a href="/resources">Resources</a>
-  </nav>
+    <header>
+        <div class="container">
+            <h1>🤖 Machine Learning Course</h1>
+            <p>Learn the fundamentals of machine learning and artificial intelligence through hands-on projects and real-world applications.</p>
+        </div>
+    </header>
 
-  <hr>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#github">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  {{ content }}
+    <section id="overview">
+        <div class="container">
+            <h2>Course Overview</h2>
+            <div class="overview">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Comprehensive Curriculum</h3>
+                    <p>From basic concepts to advanced techniques, covering supervised learning, unsupervised learning, neural networks, and more.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Hands-On Projects</h3>
+                    <p>Practical projects and exercises to reinforce your learning and build a strong portfolio of ML applications.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Real-World Applications</h3>
+                    <p>Learn how to apply machine learning to solve real problems in various domains like healthcare, finance, and technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="topics">
+        <div class="container">
+            <h2>Course Topics</h2>
+            <div class="topics-grid">
+                <div class="topic-item">
+                    <h4>Introduction to ML</h4>
+                    <p>Basics and fundamentals</p>
+                </div>
+                <div class="topic-item">
+                    <h4>Supervised Learning</h4>
+                    <p>Classification & Regression</p>
+                </div>
+                <div class="topic-item">
+                    <h4>Unsupervised Learning</h4>
+                    <p>Clustering & Dimensionality</p>
+                </div>
+                <div class="topic-item">
+                    <h4>Neural Networks</h4>
+                    <p>Deep learning basics</p>
+                </div>
+                <div class="topic-item">
+                    <h4>Model Evaluation</h4>
+                    <p>Metrics & Validation</p>
+                </div>
+                <div class="topic-item">
+                    <h4>Feature Engineering</h4>
+                    <p>Data preprocessing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources">
+        <div class="container">
+            <h2>Learning Resources</h2>
+            <div class="resources-list">
+                <div class="resource-item">
+                    <a href="#">📖 Course Materials</a>
+                    <p>Comprehensive notes, slides, and documentation for each module.</p>
+                </div>
+                <div class="resource-item">
+                    <a href="#">💾 Code Examples</a>
+                    <p>Jupyter notebooks and Python scripts demonstrating key concepts.</p>
+                </div>
+                <div class="resource-item">
+                    <a href="#">📊 Datasets</a>
+                    <p>Curated datasets for practice and project work.</p>
+                </div>
+                <div class="resource-item">
+                    <a href="#">🎥 Video Lectures</a>
+                    <p>Recorded lectures and tutorials for visual learners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="github">
+        <div class="container">
+            <h2>Get Started</h2>
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.2em; margin-bottom: 30px;">Visit our GitHub repository to access all course materials and start learning today!</p>
+                <a href="#" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1.1em; transition: transform 0.3s;">
+                    View on GitHub →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Machine Learning Course. Open source educational content.</p>
+            <p style="margin-top: 10px;">
+                <a href="#">GitHub</a> | 
+                <a href="#">Documentation</a> | 
+                <a href="#">Contributing</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
