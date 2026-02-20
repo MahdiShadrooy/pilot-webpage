@@ -32,7 +32,7 @@ We emphasize principles over software and derivations over recipes.
 - James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: with Applications in Python*. Springer.
 </div>
 <div style="flex:0 0 15px;">
-<img src="/assets/images/isl.png" alt="ISL Python Book" style="width:5%;"/>
+<img src="assets/images/isl.png" alt="ISL Python Book" style="width:5%;"/>
 </div>
 
 </div>
