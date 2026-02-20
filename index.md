@@ -24,14 +24,15 @@ We emphasize principles over software and derivations over recipes.
 
 - James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: with Applications in Python*. Springer.
 
-- Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.
 
 <div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap;">
 
 <div style="flex:1;">
 - James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: with Applications in Python*. Springer.
 </div>
-<div style="flex:0 0 50px;">
+
+- James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning: with Applications in Python*. Springer.
+<div style="flex:0 0 100px;">
 <img src="assets/images/isl.png" alt="ISL Python Book" style="width:100%;"/>
 </div>
 
@@ -42,7 +43,9 @@ We emphasize principles over software and derivations over recipes.
 <div style="flex:1;">
 - Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.
 </div>
-<div style="flex:0 0 50px;">
+- Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning: Data Mining, Inference, and Prediction* (2nd ed.). Springer.
+
+<div style="flex:0 0 100px;">
 <img src="assets/images/ESL.jpg" alt="ESL Book" style="width:100%;"/>
 </div>
 
